@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asfiya Shaikh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="icons/profile.jpg" alt="Asfiya" class="profile-img" />
+      <h2>Asfiya Shaikh</h2>
+      <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+    </div>
+    <nav class="side-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1>Hello, I'm Asfiya 👋</h1>
+      <p class="typing" aria-label="Typing roles animation"></p>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+<section id="about">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      I am <strong>Asfiya Shaikh</strong>, a second-year Bachelor of Computer Applications (BCA) student at Kristu Jayanti College with a strong foundation in software development, cybersecurity, and data analytics. I am driven by a deep interest in building practical, impactful solutions using modern technologies.
+    </p>
+    <p>
+      I have earned multiple certifications from leading institutions including Microsoft, Infosys Springboard, Tata Forage, MathWorks, and Itronix Solutions. My technical toolkit includes proficiency in Python, Java, .NET, C programming, HTML, CSS, and MySQL, as well as experience with cybersecurity principles, data visualization, and network fundamentals.
+    </p>
+    <p>
+      In addition to technical expertise, I possess strong communication and leadership skills, demonstrated through experiences in public speaking, team collaboration, and technical documentation. I take pride in effectively translating complex technical ideas into clear, actionable outcomes — whether in group projects, presentations, or report writing.
+    </p>
+    <p>
+      I am passionate about continuous learning and aspire to pursue postgraduate education in the field of computer science or cybersecurity. My long-term goal is to contribute meaningfully to the tech industry through innovative and ethical technological development.
+    </p>
+  </div>
+
+
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <img src="icons/html.png" alt="HTML Icon" class="skill-icon"/>
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/css.png" alt="CSS Icon" class="skill-icon"/>
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/python.png" alt="Python Icon" class="skill-icon"/>
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/java.png" alt="Java Icon" class="skill-icon"/>
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/mysql.png" alt=" MYSQL Icon" class="skill-icon"/>
+          <p> MYSQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/structure.png" alt="Data Structures Icon" class="skill-icon"/>
+          <p>Data Structures
+          </p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/dotnet.png" alt=".NET Icon" class="skill-icon"/>
+          <p>.NET</p>
+        </div>
+        <div class="skill-item">
+          <img src="icons/c.png" alt="C Programming Icon" class="skill-icon"/>
+          <p>C Programming</p>
+        </div>
+      </div>
+
+
+      <h2>Soft Skills</h2>
+
+      <div class="soft-skills-container">
+        <ul class="skills">
+
+          <li>Public Speaking</li>
+          <li>Presentation</li>
+          <li>Documentation</li>
+          <li>Report Writing</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Web Development Intern</h3>
+        <p><strong>VaultofCodes</strong> | April 2025 – Present</p>
+        <p>Currently working on designing and developing responsive web pages using HTML and CSS.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal website showcasing my profile and work.</p>
+      </div>
+      <div class="card">
+        <h3>Expense Tracker</h3>
+        <p>App to log and visualize expenses.</p>
+      </div>
+      <div class="card">
+        <h3>ConstructSync</h3>
+        <p>Construction management app for progress tracking.</p>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>View or download my resume <a href="Asfiya_Shaikh_Resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:shaikhasfiya705@gmail.com">shaikhasfiya705@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/asfiya-shaikh-289348288" target="_blank" rel="noopener noreferrer">linkedin.com/in/asfiya-shaikh</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Asfiya Shaikh. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    const roles = ["Web Developer", "Aspiring Software Developer", "Cybersecurity Enthusiast", "Tech Explorer"];
+    let roleIndex = 0, charIndex = 0;
+    const typingElement = document.querySelector(".typing");
+
+    function type() {
+      if (charIndex < roles[roleIndex].length) {
+        typingElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(erase, 1500);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typingElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 60);
+      } else {
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(type, 500);
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      themeToggle.textContent = document.body.classList.contains('dark') ? '🌞' : '🌙' ;
+   
+    });
+
+    // Scroll to top button logic
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+</html>
